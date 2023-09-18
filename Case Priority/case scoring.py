@@ -1,8 +1,8 @@
 import json
 import sentiment_fetcher
-def score_case(json_file_path):
-    # data is a json file here
-        casetype_score={'Murder and Homicide Cases':39,'Theft and Robbery Cases':38,'Fraud and Financial Crimes':37,
+def score_case(data):
+    # data is a json object here
+            casetype_score={'Murder and Homicide Cases':39,'Theft and Robbery Cases':38,'Fraud and Financial Crimes':37,
                          'Assault and Battery Cases':36,
                          'Cybercrime Cases':35,'Domestic Violence Cases':34,'Child Custody Cases':33,
                         'Adoption Cases':32,'Guardianship Cases':31,
@@ -16,10 +16,7 @@ def score_case(json_file_path):
                          'Partition Suits':7,'Declaration Suits':6,
                          'Intellectual Property Cases':5,'Consumer Cases':4,'Property Cases':3,
                           'Labor and Employment Cases':2,'Writ Petitions':1  }
-        score=0.0
-        with open(json_file_path, 'r') as json_file:
-            # Load the JSON data
-            data = json.load(json_file)
+            score=0.0
             casetype=data['casetype']
             score+=casetype_score[casetype]
             score+=data['Number of Parties']
