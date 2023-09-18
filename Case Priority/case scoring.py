@@ -2,6 +2,7 @@ import json
 import sentiment_fetcher
 def score_case(data):
     # data is a json object here
+            # this dictionary stores the weightage given to each case type. Higher value means higher weightage
             casetype_score={'Murder and Homicide Cases':39,'Theft and Robbery Cases':38,'Fraud and Financial Crimes':37,
                          'Assault and Battery Cases':36,
                          'Cybercrime Cases':35,'Domestic Violence Cases':34,'Child Custody Cases':33,
