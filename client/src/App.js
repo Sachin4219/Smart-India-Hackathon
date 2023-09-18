@@ -1,4 +1,5 @@
 import './App.css';
+import "./css/style.css"
 import React from 'react'
 import {BrowserRouter , Route, Routes} from 'react-router-dom'
 import {HomePageJudge, HomePageLitigant, HomePageUser} from './pages/index.js';
