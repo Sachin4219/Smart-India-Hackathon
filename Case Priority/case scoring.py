@@ -39,10 +39,10 @@ def score_case(data):
             if data['Influential Person Involved'] == 'Yes':
                   score += 1
 
-            public_interest, overall_public_sentiment,count_negative=sentiment_fetcher('keywords.json')
-            score+=public_interest/10
-            if overall_public_sentiment== 'Negative':
-                  score += count_negative
+            #public_interest, overall_public_sentiment,count_negative=sentiment_fetcher('keywords.json')
+            score+=data['Public Interest']/10
+            if data['Overall Public Sentiment']== 'Negative':
+                  score += data['Public Interest']/100
                   
             return score
         
