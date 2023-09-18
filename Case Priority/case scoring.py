@@ -18,31 +18,31 @@ def score_case(data):
                          'Intellectual Property Cases':5,'Consumer Cases':4,'Property Cases':3,
                           'Labor and Employment Cases':2,'Writ Petitions':1  }
             score=0.0
-            casetype=data['casetype']
+            casetype=data['Casde Type']
             score+=casetype_score[casetype]
-            score+=data['Number of Parties']
+            score+=data['Number of parties involved in the case']
             if data['Diversity of Interests between parties'] == 'Yes':
                   score += 1
             if data['Presence of Counter Claims'] == 'Yes':
                   score += 1
             score+=data['Party or Member of Party Deceased']
-            score+=data['Number of Witnesses']
+            score+=data['Number of witnesses']
             score+=(-1)*data['Volume of Evidence']
             score+=data['Number of hearings held']
-            score+=data['Critical Evidence']
+            score+=data['Critical Evidence related to human rights violation or public safety']
             if data['Urgency by Parties']== 'Yes':
                   score+= 1
-            score+=data['Financial Claims']/10000
+            score+=data['Amount of Financial Claims made in the case']/10000
             
-            if data['Vulnerable Population involved'] == 'Yes':
+            if data['Vulnerable Population (Children/ Elderly) involved in the case'] == 'Yes':
                   score+=1
-            if data['Influential Person Involved'] == 'Yes':
+            if data['Influential Person Involved (Businessman/Politician/Actor etc.)'] == 'Yes':
                   score += 1
 
-            public_interest, overall_public_sentiment,count_negative=sentiment_fetcher('keywords.json')
-            score+=public_interest/10
-            if overall_public_sentiment== 'Negative':
-                  score += count_negative
+            #public_interest, overall_public_sentiment,count_negative=sentiment_fetcher('keywords.json')
+            score+=data['Public Interest']/10
+            if data['Overall Public Sentiment']== 'Negative':
+                  score += data['Public Interest']/100
                   
             return score
         
