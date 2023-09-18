@@ -1,0 +1,145 @@
+Case Type,Number of parties involved in the case,Diversity of Interests between parties,Presence of Counter Claims,Party or Member of Party Deceased,Volume of Evidence,Critical Evidence related to human rights violation or public safety,Urgency by Parties,Amount of Financial Claims made in the case,Vulnerable Population (Children/ Elderly) involved in the case,Influential Person Involved (Businessman/Politician/Actor etc.),Public Interest,Overall Public Sentiment,Number of witnesses,Number of hearings held,Time for evidence study,score,priority_float,priority_bucket
+Theft and Robbery Cases,6,Yes,No,0,42,3,Yes,250000,No,No,1500,Neutral,18,5,-42,205.0,11.009667024704619,11.0
+Divorce Cases,3,No,Yes,0,18,0,No,35000,No,Yes,800,Positive,2,15,-18,117.5,6.310418904403867,6.0
+Income Tax Cases,4,Yes,No,0,25,0,Yes,7500000,No,Yes,2000,Negative,8,9,-25,984.0,52.84640171858217,52.0
+Intellectual Property Cases,2,No,No,0,10,0,No,500000,No,No,120,Neutral,2,0,-10,61.0,3.276047261009667,3.0
+Public Interest Litigation (PIL),5,Yes,Yes,1,55,10,Yes,15000000,Yes,Yes,3500,Positive,13,9,-55,1862.0,100.0,100.0
+Assault and Battery Cases,7,Yes,Yes,1,62,8,Yes,8000000,No,Yes,2400,Neutral,19,3,-62,1056.0,56.713211600429645,56.0
+Commercial Suits,4,Yes,No,0,35,0,Yes,4000000,No,No,1200,Positive,18,7,-35,527.0,28.302900107411386,28.0
+Injunction Suits,3,No,No,0,22,0,No,75000,No,No,320,Negative,3,9,-22,44.7,2.4006444683136414,2.0
+Rent Suits,5,Yes,Yes,1,48,3,Yes,1000000,No,Yes,1800,Neutral,1,5,-48,261.0,14.0171858216971,14.0
+Custodial Death Cases,3,No,No,2,28,5,Yes,200000,No,No,750,Positive,6,6,-28,111.0,5.961331901181525,5.0
+Property Suits,6,Yes,Yes,1,55,0,Yes,6000000,No,Yes,2600,Neutral,19,1,-55,848.0,45.54242749731471,45.0
+Domestic Violence Cases,4,Yes,No,0,30,0,No,90000,Yes,No,1200,Positive,17,8,-30,164.0,8.807733619763695,8.0
+Declaration Suits,2,No,No,0,8,0,No,20000,No,No,90,Neutral,14,14,-8,39.0,2.0945220193340495,2.0
+Fundamental Rights Cases,2,No,No,0,12,0,No,50000,No,No,150,Positive,13,13,-12,61.0,3.276047261009667,3.0
+Adoption Cases,3,No,No,0,10,0,No,80000,Yes,No,100,Neutral,16,11,-10,71.0,3.8131041890440387,3.0
+Matrimonial Disputes,4,Yes,Yes,1,35,0,Yes,100000,No,Yes,1200,Positive,14,19,-35,166.0,8.915145005370569,8.0
+Partition Suits,3,No,No,0,20,0,No,50000,No,No,200,Neutral,1,14,-20,30.0,1.6111707841031149,1.0
+Money Suits,2,No,Yes,0,15,0,Yes,25000,No,No,80,Positive,6,15,-15,33.5,1.799140708915145,1.0
+Pollution Control Cases,4,Yes,No,0,40,0,Yes,1500000,Yes,No,750,Negative,7,15,-40,244.5,13.131041890440386,13.0
+Adoption Cases,3,No,No,0,12,0,No,100000,Yes,No,160,Positive,7,17,-12,74.0,3.9742212674543502,3.0
+Cybercrime Cases,5,Yes,No,0,30,2,Yes,200000,No,No,900,Neutral,6,15,-30,145.0,7.7873254564983885,7.0
+Theft and Robbery Cases,6,Yes,Yes,1,45,5,Yes,300000,No,Yes,1500,Neutral,12,1,-45,202.0,10.848549946294307,10.0
+Child Custody Cases,4,No,No,0,20,0,No,50000,Yes,No,280,Positive,1,15,-20,67.0,3.59828141783029,3.0
+Income Tax Cases,3,Yes,Yes,1,18,0,Yes,5500000,No,Yes,2200,Negative,2,14,-18,813.0,43.662728249194416,43.0
+Divorce Cases,2,No,No,0,15,0,Yes,75000,No,No,380,Neutral,17,10,-15,90.5,4.860365198711063,4.0
+Money Suits,2,No,Yes,0,12,0,Yes,35000,No,No,150,Positive,11,2,-12,36.5,1.9602577873254565,1.0
+Contractual Disputes,4,Yes,No,0,28,0,Yes,480000,No,No,420,Neutral,3,11,-28,99.0,5.316863587540279,5.0
+Pollution Control Cases,5,Yes,Yes,1,55,7,Yes,1800000,Yes,No,1050,Positive,12,6,-55,288.0,15.467239527389903,15.0
+Public Interest Litigation (PIL),7,Yes,Yes,1,75,12,Yes,7500000,Yes,Yes,3000,Positive,12,11,-75,1047.0,56.22986036519871,56.0
+Assault and Battery Cases,3,Yes,Yes,1,30,2,Yes,350000,No,No,600,Neutral,1,7,-30,118.0,6.337271750805585,6.0
+Commercial Suits,6,Yes,Yes,1,60,8,Yes,6000000,Yes,Yes,2400,Neutral,11,7,-60,829.0,44.52201933404941,44.0
+Custodial Death Cases,4,Yes,No,0,22,0,Yes,85000,No,Yes,1100,Positive,11,16,-22,151.5,8.13641245972073,8.0
+Fundamental Rights Cases,3,No,No,0,18,0,Yes,200000,No,No,190,Positive,17,18,-18,85.0,4.564983888292159,4.0
+Maintenance Cases,5,Yes,No,0,35,0,Yes,95000,No,No,780,Positive,5,14,-35,106.5,5.719656283566058,5.0
+Restitution Cases,2,No,No,0,14,0,No,30000,No,No,140,Positive,6,9,-14,47.0,2.524167561761547,2.0
+Succession Cases,4,Yes,No,0,25,0,Yes,200000,No,No,290,Neutral,12,9,-25,77.0,4.135338345864661,4.0
+Income Tax Cases,3,Yes,No,0,28,0,Yes,5500000,No,Yes,2400,Neutral,16,12,-28,811.0,43.55531686358754,43.0
+Goods and Services Tax (GST) Cases,4,Yes,Yes,1,40,6,Yes,4200000,No,No,900,Positive,7,2,-40,507.0,27.228786251342644,27.0
+Money Suits,5,Yes,Yes,1,55,8,Yes,650000,No,No,700,Positive,12,4,-55,126.0,6.7669172932330826,6.0
+Property Suits,2,No,No,0,12,0,Yes,75000,Yes,No,360,Neutral,9,4,-12,60.5,3.2491944146079486,3.0
+Rent Suits,3,Yes,Yes,1,24,0,Yes,95000,Yes,No,410,Neutral,10,0,-24,54.5,2.9269602577873255,2.0
+Injunction Suits,2,No,No,0,18,0,Yes,60000,No,No,280,Neutral,4,17,-18,49.0,2.6315789473684212,2.0
+Specific Performance Suits,4,Yes,No,0,30,0,Yes,85000,No,No,550,Positive,1,8,-30,56.5,3.0343716433942,3.0
+Partition Suits,5,Yes,Yes,1,42,0,Yes,120000,Yes,No,670,Neutral,3,8,-42,65.0,3.4908700322234156,3.0
+Declaration Suits,2,No,No,0,14,0,Yes,38000,No,No,110,Neutral,19,2,-14,30.8,1.6541353383458646,1.0
+Intellectual Property Cases,3,Yes,Yes,1,28,0,Yes,480000,No,No,800,Positive,10,2,-28,124.0,6.659505907626208,6.0
+Consumer Cases,4,Yes,No,0,35,0,Yes,55000,No,No,340,Positive,12,6,-35,32.5,1.7454350161117078,1.0
+Property Cases,5,Yes,Yes,1,50,4,Yes,220000,No,Yes,1200,Positive,14,5,-50,128.0,6.874328678839957,6.0
+Writ Petitions,2,No,No,0,8,0,Yes,15000,No,No,60,Positive,7,15,-8,25.5,1.3694951664876478,1.0
+Public Interest Litigation (PIL),3,Yes,Yes,1,32,0,Yes,400000,No,Yes,1800,Positive,1,17,-32,238.0,12.781954887218046,12.0
+Theft and Robbery Cases,5,Yes,Yes,1,42,4,Yes,280000,No,No,1320,Neutral,15,3,-42,187.0,10.042964554242749,10.0
+Money Suits,2,No,Yes,0,10,0,Yes,45000,No,No,210,Positive,7,8,-10,47.5,2.5510204081632653,2.0
+Child Custody Cases,3,No,Yes,0,18,0,No,60000,Yes,No,320,Positive,13,4,-18,75.0,4.027926960257787,4.0
+Fundamental Rights Cases,2,No,No,0,12,0,Yes,120000,No,No,180,Positive,17,16,-12,79.0,4.242749731471536,4.0
+Public Interest Litigation (PIL),6,Yes,Yes,1,60,11,Yes,8200000,Yes,Yes,3900,Positive,18,5,-60,1220.0,65.52094522019334,65.0
+Cybercrime Cases,4,Yes,Yes,1,35,5,Yes,310000,No,Yes,1420,Neutral,3,0,-35,190.0,10.204081632653061,10.0
+Maintenance Cases,5,Yes,No,0,30,0,Yes,105000,No,No,620,Positive,4,11,-30,92.5,4.967776584317938,4.0
+Custodial Death Cases,3,Yes,No,0,20,0,Yes,75000,No,No,430,Neutral,19,1,-20,76.5,4.108485499462943,4.0
+Restitution Cases,2,No,No,0,8,0,Yes,25000,No,No,110,Neutral,4,15,-8,54.5,2.9269602577873255,2.0
+Succession Cases,4,Yes,No,0,28,0,Yes,78000,No,No,370,Neutral,15,9,-28,72.8,3.9097744360902253,3.0
+Goods and Services Tax (GST) Cases,5,Yes,Yes,1,45,6,Yes,4200000,No,Yes,1950,Positive,1,4,-45,605.0,32.49194414607948,32.0
+Pollution Control Cases,6,Yes,Yes,1,55,8,Yes,1750000,Yes,No,1100,Neutral,14,8,-55,294.0,15.789473684210526,15.0
+Money Suits,2,No,Yes,0,14,0,Yes,40000,No,No,190,Positive,4,8,-14,38.0,2.0408163265306123,2.0
+Property Suits,3,Yes,Yes,1,24,0,Yes,90000,No,No,410,Neutral,11,18,-24,74.0,3.9742212674543502,3.0
+Injunction Suits,4,Yes,Yes,1,32,0,Yes,110000,No,No,500,Positive,6,18,-32,70.0,3.7593984962406015,3.0
+Specific Performance Suits,2,No,No,0,12,0,Yes,28000,No,No,130,Positive,5,16,-12,35.8,1.9226638023630502,1.0
+Declaration Suits,5,Yes,No,0,40,0,Yes,64000,No,No,310,Positive,5,12,-40,27.4,1.4715359828141783,1.0
+Intellectual Property Cases,6,Yes,Yes,1,52,0,Yes,560000,No,No,850,Positive,14,19,-52,137.0,7.357679914070892,7.0
+Consumer Cases,3,Yes,No,0,16,0,Yes,72000,No,No,260,Positive,7,7,-16,40.2,2.1589688506981743,2.0
+Rent Suits,4,Yes,Yes,1,36,0,Yes,84000,No,No,400,Positive,1,15,-36,46.4,2.4919441460794842,2.0
+Assault and Battery Cases,2,No,No,0,14,0,Yes,30000,No,No,140,Neutral,8,8,-14,58.0,3.1149301825993554,3.0
+Commercial Suits,5,Yes,Yes,1,48,0,Yes,95000,No,Yes,760,Positive,7,1,-48,66.5,3.5714285714285716,3.0
+Divorce Cases,3,Yes,Yes,1,30,0,Yes,120000,No,No,520,Neutral,13,5,-30,89.0,4.779806659505907,4.0
+Income Tax Cases,2,Yes,Yes,1,22,0,Yes,720000,No,Yes,1500,Neutral,5,4,-22,231.0,12.406015037593985,12.0
+Child Custody Cases,3,Yes,No,0,24,0,No,70000,Yes,No,340,Positive,16,7,-24,78.0,4.189044038668099,4.0
+Fundamental Rights Cases,2,No,No,0,10,0,Yes,38000,No,No,170,Positive,5,10,-10,53.8,2.8893662728249194,2.0
+Maintenance Cases,5,Yes,No,0,36,0,Yes,60000,No,No,420,Positive,10,4,-36,61.0,3.276047261009667,3.0
+Restitution Cases,3,Yes,No,0,26,0,Yes,82000,No,No,390,Neutral,8,2,-26,63.2,3.394199785177229,3.0
+Succession Cases,2,No,No,0,12,0,Yes,20000,No,No,90,Positive,19,9,-12,56.0,3.007518796992481,3.0
+Public Interest Litigation (PIL),4,Yes,Yes,1,44,7,Yes,4400000,Yes,Yes,2950,Positive,5,19,-44,756.0,40.6015037593985,40.0
+Cybercrime Cases,6,Yes,Yes,1,54,8,Yes,375000,No,Yes,1850,Neutral,4,8,-54,234.5,12.593984962406015,12.0
+Theft and Robbery Cases,2,Yes,No,0,16,0,Yes,56000,No,No,240,Neutral,4,6,-16,65.6,3.5230934479054774,3.0
+Money Suits,3,Yes,Yes,1,28,0,Yes,110000,No,No,560,Positive,1,8,-28,68.0,3.651987110633727,3.0
+Property Suits,4,Yes,Yes,1,38,0,Yes,66000,Yes,Yes,640,Neutral,3,3,-38,60.6,3.254564983888292,3.0
+Injunction Suits,2,No,No,0,12,0,Yes,16000,No,No,80,Positive,11,18,-12,38.6,2.0730397422126745,2.0
+Specific Performance Suits,5,Yes,Yes,1,46,0,Yes,72000,Yes,Yes,710,Positive,4,10,-46,65.2,3.5016111707841033,3.0
+Declaration Suits,3,Yes,No,0,24,0,Yes,50000,No,No,320,Neutral,8,16,-24,48.0,2.577873254564984,2.0
+Intellectual Property Cases,4,Yes,Yes,1,32,0,Yes,58000,No,No,490,Neutral,4,5,-32,44.8,2.406015037593985,2.0
+Consumer Cases,2,No,No,0,10,0,Yes,15000,No,No,70,Positive,3,6,-10,14.5,0.7787325456498388,0.0
+Commercial Suits,6,Yes,Yes,1,50,0,Yes,94000,No,Yes,1020,Positive,2,7,-50,92.4,4.962406015037594,4.0
+Divorce Cases,3,Yes,Yes,1,26,0,Yes,100000,No,No,480,Neutral,3,1,-26,73.0,3.920515574650913,3.0
+Income Tax Cases,2,Yes,Yes,1,20,0,Yes,680000,No,Yes,1200,Neutral,8,17,-20,215.0,11.54672395273899,11.0
+Child Custody Cases,3,Yes,No,0,32,0,No,62000,Yes,No,310,Positive,15,6,-32,64.2,3.447905477980666,3.0
+Fundamental Rights Cases,2,No,No,0,18,0,Yes,27000,No,No,140,Positive,18,19,-18,63.7,3.4210526315789473,3.0
+Maintenance Cases,5,Yes,No,0,40,0,Yes,56000,No,No,330,Positive,4,12,-40,49.6,2.6638023630504835,2.0
+Restitution Cases,3,Yes,No,0,30,0,Yes,72000,No,No,370,Neutral,13,10,-30,69.2,3.7164339419978516,3.0
+Succession Cases,2,No,No,0,14,0,Yes,26000,No,No,120,Positive,3,17,-14,49.6,2.6638023630504835,2.0
+Public Interest Litigation (PIL),4,Yes,Yes,1,48,8,Yes,540000,Yes,Yes,2900,Positive,16,0,-48,354.0,19.011815252416756,19.0
+Cybercrime Cases,6,Yes,Yes,1,60,10,Yes,460000,Yes,Yes,2100,Neutral,14,14,-60,281.0,15.091299677765843,15.0
+Theft and Robbery Cases,2,Yes,No,0,12,0,Yes,45000,No,No,230,Neutral,12,2,-12,71.5,3.839957035445757,3.0
+Money Suits,3,Yes,Yes,1,24,0,Yes,32000,No,No,120,Neutral,15,14,-24,40.2,2.1589688506981743,2.0
+Child Custody Cases,4,Yes,No,0,30,0,Yes,82000,Yes,No,280,Positive,11,13,-30,70.2,3.7701396348012888,3.0
+Income Tax Cases,2,Yes,Yes,1,18,0,Yes,780000,No,Yes,1400,Neutral,8,4,-18,234.0,12.567132116004297,12.0
+Divorce Cases,3,Yes,No,0,24,0,Yes,68000,No,No,380,Neutral,2,13,-24,70.8,3.8023630504833514,3.0
+Cybercrime Cases,4,Yes,Yes,1,32,0,Yes,60000,No,Yes,160,Positive,7,3,-32,44.0,2.3630504833512354,2.0
+Maintenance Cases,2,No,Yes,0,12,0,Yes,45000,Yes,No,280,Neutral,8,15,-12,76.5,4.108485499462943,4.0
+Fundamental Rights Cases,3,Yes,Yes,1,26,0,Yes,72000,Yes,Yes,440,Positive,10,14,-26,83.2,4.468313641245972,4.0
+Public Interest Litigation (PIL),5,Yes,Yes,1,42,0,Yes,540000,Yes,Yes,2200,Positive,13,9,-42,289.0,15.52094522019334,15.0
+Commercial Suits,4,Yes,Yes,1,32,0,Yes,50000,Yes,Yes,580,Neutral,15,18,-32,85.0,4.564983888292159,4.0
+Injunction Suits,2,Yes,No,0,16,0,Yes,28000,No,No,170,Positive,12,7,-16,35.8,1.9226638023630502,1.0
+Specific Performance Suits,3,Yes,Yes,1,24,0,Yes,36000,Yes,Yes,190,Positive,18,17,-24,50.6,2.7175080558539206,2.0
+Declaration Suits,4,Yes,No,0,20,0,Yes,42000,No,No,210,Positive,2,3,-20,22.2,1.1922663802363052,1.0
+Intellectual Property Cases,2,Yes,Yes,1,16,0,Yes,24000,No,No,110,Neutral,6,12,-16,26.4,1.4178302900107411,1.0
+Consumer Cases,3,Yes,Yes,1,18,0,Yes,22000,No,No,90,Positive,4,15,-18,23.2,1.2459720730397421,1.0
+Property Cases,4,Yes,Yes,1,30,0,Yes,56000,Yes,Yes,300,Neutral,3,11,-30,32.6,1.7508055853920517,1.0
+Rent Suits,2,Yes,Yes,1,14,0,Yes,32000,Yes,Yes,160,Neutral,7,15,-14,45.2,2.42749731471536,2.0
+Custodial Death Cases,3,Yes,Yes,1,22,0,Yes,48000,No,Yes,260,Positive,7,6,-22,50.8,2.728249194414608,2.0
+Pollution Control Cases,4,Yes,Yes,1,28,0,Yes,42000,Yes,No,320,Positive,10,7,-28,57.2,3.071965628356606,3.0
+Succession Cases,2,Yes,No,0,10,0,Yes,14000,No,No,80,Positive,1,15,-10,45.4,2.438238453276047,2.0
+Restitution Cases,3,Yes,No,0,20,0,Yes,28000,No,No,110,Neutral,7,1,-20,33.8,1.8152524167561759,1.0
+Commercial Suits,4,Yes,Yes,1,24,0,Yes,34000,No,Yes,120,Positive,15,1,-24,27.4,1.4715359828141783,1.0
+Divorce Cases,2,Yes,No,0,12,0,Yes,16000,No,No,70,Positive,13,4,-12,47.6,2.556390977443609,2.0
+Income Tax Cases,3,Yes,Yes,1,18,0,Yes,20000,No,Yes,110,Neutral,3,17,-18,38.0,2.0408163265306123,2.0
+Child Custody Cases,4,Yes,Yes,1,28,0,Yes,28000,Yes,No,220,Positive,14,17,-28,69.8,3.7486573576799143,3.0
+Money Suits,2,No,Yes,0,10,0,Yes,18000,No,No,100,Positive,16,2,-10,36.8,1.9763694951664874,1.0
+Pollution Control Cases,3,Yes,No,0,16,0,Yes,22000,Yes,No,90,Positive,2,16,-16,42.2,2.2663802363050483,2.0
+Adoption Cases,2,No,No,0,8,0,No,10000,No,No,60,Positive,8,16,-8,57.0,3.061224489795918,3.0
+Fundamental Rights Cases,3,Yes,Yes,1,24,0,Yes,32000,Yes,Yes,170,Positive,2,18,-24,50.2,2.6960257787325457,2.0
+Maintenance Cases,2,Yes,No,0,12,0,Yes,14000,Yes,No,80,Positive,10,0,-12,40.4,2.1697099892588616,2.0
+Succession Cases,4,Yes,Yes,1,30,0,Yes,50000,No,No,240,Neutral,14,18,-30,65.0,3.4908700322234156,3.0
+Public Interest Litigation (PIL),5,Yes,Yes,1,36,0,Yes,46000,Yes,Yes,260,Positive,3,16,-36,48.6,2.6100966702470463,2.0
+Cybercrime Cases,2,Yes,No,0,8,0,Yes,16000,No,Yes,100,Neutral,3,19,-8,65.6,3.5230934479054774,3.0
+Theft and Robbery Cases,3,Yes,Yes,1,22,0,Yes,38000,No,No,140,Neutral,9,7,-22,56.8,3.050483351235231,3.0
+Consumer Cases,4,Yes,No,0,20,0,Yes,42000,No,No,210,Positive,10,1,-20,26.2,1.4070891514500536,1.0
+Property Suits,2,Yes,Yes,1,12,0,Yes,20000,Yes,No,110,Neutral,9,8,-12,37.0,1.9871106337271751,1.0
+Money Suits,3,No,Yes,0,18,0,Yes,28000,No,No,160,Positive,8,3,-18,29.8,1.6004296455424274,1.0
+Income Tax Cases,2,No,No,0,10,0,Yes,12000,No,No,70,Positive,11,10,-10,37.2,1.9978517722878628,1.0
+Rent Suits,3,Yes,Yes,1,20,0,Yes,30000,Yes,Yes,140,Positive,3,4,-20,23.0,1.2352309344790549,1.0
+Divorce Cases,2,Yes,No,0,14,0,Yes,20000,No,No,80,Positive,16,2,-14,48.0,2.577873254564984,2.0
+Declaration Suits,4,Yes,Yes,1,28,0,Yes,40000,No,Yes,190,Positive,18,7,-28,35.0,1.8796992481203008,1.0
+Intellectual Property Cases,3,No,Yes,0,16,0,Yes,24000,No,Yes,100,Neutral,6,9,-16,22.4,1.2030075187969924,1.0
+Assault and Battery Cases,2,Yes,No,0,10,0,Yes,18000,No,No,60,Positive,10,5,-10,52.8,2.8356605800214822,2.0
+Commercial Suits,4,Yes,Yes,1,24,0,Yes,34000,Yes,Yes,160,Neutral,6,0,-24,22.4,1.2030075187969924,1.0
+Child Custody Cases,2,Yes,Yes,1,12,0,No,12000,Yes,No,70,Positive,9,9,-12,53.2,2.857142857142857,2.0
