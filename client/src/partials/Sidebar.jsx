@@ -219,8 +219,7 @@ function Sidebar({
                           <li className="mb-1 last:mb-0">
                             <NavLink
                               end
-                              to="/presentCases"
-                              className={({ isActive }) =>
+                              to={`${(profile==='Advocate') ? '/litigant/presentCases' : '/judge/presentCases'}`}                              className={({ isActive }) =>
                                 'block transition duration-150 truncate ' + (isActive ? 'text-indigo-500' : 'text-slate-400 hover:text-slate-200')
                               }
                             >
@@ -232,7 +231,7 @@ function Sidebar({
                           <li className="mb-1 last:mb-0">
                             <NavLink
                               end
-                              to="/pastCases"
+                              to={`${(profile==='Advocate') ? '/litigant/pastCases' : '/judge/pastCases'}`}
                               className={({ isActive }) =>
                                 'block transition duration-150 truncate ' + (isActive ? 'text-indigo-500' : 'text-slate-400 hover:text-slate-200')
                               }
@@ -242,10 +241,10 @@ function Sidebar({
                               </span>
                             </NavLink>
                           </li>
-                          <li className="mb-1 last:mb-0">
+                          <li className={`${(profile==="Advocate") ? "hidden" : "mb-1 last:mb-0"}`}>
                             <NavLink
                               end
-                              to="/upcomingCases"
+                              to={`${(profile==='Advocate') ? '/litigant/upcomingCases' : '/judge/upcomingCases'}`}
                               className={({ isActive }) =>
                                 'block transition duration-150 truncate ' + (isActive ? 'text-indigo-500' : 'text-slate-400 hover:text-slate-200')
                               }
@@ -299,7 +298,7 @@ function Sidebar({
                   );
                 }}
               </SidebarLinkGroup>
-              {(profile==='lawyer') ? 
+              {(profile==='Advocate') ? 
               <SidebarLinkGroup activecondition={pathname.includes('profile')}>
                 {(handleClick, open) => {
                   return (

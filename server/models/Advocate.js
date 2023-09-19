@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const advocateSchema = mongoose.Schema(
+const AdvocateSchema = mongoose.Schema(
     {
         firstName: {
             type: String,
@@ -14,10 +14,10 @@ const advocateSchema = mongoose.Schema(
         description: String,
         picturePath: String,
         userPicturePath: String,
-        caseList : [{type : 'ObjectId', ref: 'Case'}]
+        caseList: [{ type: 'ObjectId', ref: 'Case' }]
     },
     { timestamps: true }
 )
 
-const Advocate = mongoose.model("Advocate", advocateSchema);
+const Advocate = mongoose.model("Advocate", AdvocateSchema);
 export default Advocate;
