@@ -21,7 +21,7 @@ function ChatLobby() {
         console.log(chatRoom)
 
         localStorage.setItem("activeChat", JSON.stringify(chatRoom));
-        window.location.href = "/user";
+        window.location.href = "/user/chat";
       }
 
     return (

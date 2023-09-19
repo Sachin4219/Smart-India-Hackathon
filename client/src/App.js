@@ -9,7 +9,8 @@ import {
   HomePageUser,
   PastCases,
   PresentCases,
-  UpcomingCases
+  UpcomingCases,
+  UserChat
 } from './pages/index.js';
 import AuthForm from './SignIn/authForm';
 
@@ -23,6 +24,7 @@ function App() {
           <Route path='/judge' element={<HomePageJudge />} />
           <Route path='/litigant' element={<HomePageLitigant />} />
           <Route path='/user' element={<HomePageUser />} />
+          <Route path='/user/chat' element={<UserChat />} />
           <Route path='/litigant/presentCases' element={<PresentCases profile="Advocate" />} />
           <Route path='/litigant/pastCases' element={<PastCases profile="Advocate" />} />
           <Route path='/judge/upcomingCases' element={<UpcomingCases profile="Judge" />} />

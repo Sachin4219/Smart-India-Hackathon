@@ -5,16 +5,9 @@ import Header from '../partials/Header';
 import WelcomeBanner from '../partials/WelcomeBanner';
 import Datepicker from '../components/Datepicker';
 import DashboardCard10 from '../partials/UpdatesCard';
-import CampaignsCard from '../partials/CampaignsCard';
-import React from 'react'
-import ChatLobby from '../components/ChatLobby.jsx'
-import ChatRoom from '../components/ChatRoom.jsx';
 
 const HomePageUser = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
-    
-  const [isActive, setIsActive] = React.useState("false");
-  const activateChatRoom = JSON.parse(localStorage.getItem("activeChat"));
 
   return (
     <div className="flex h-screen overflow-hidden">
@@ -62,28 +55,9 @@ const HomePageUser = () => {
               </div>
 
             </div>
-            <div>
-               {activateChatRoom ? <ChatRoom/> : <ChatLobby/>}
-            </div>
 
             <div className="grid grid-cols-12 gap-6">
-              {/* {
-                items.map(item => {
-                  return (
-                    <CampaignsCard
-                      key={item.id}
-                      id={item.id}
-                      category={item.category}
-                      // members={item.members}
-                      title={item.title}
-                      link={item.link}
-                      content={item.content}
-                      dates={item.dates}
-                      type={item.type}
-                    />
-                  )
-                })
-              } */}
+             
             </div>
 
             {/* Cards */}
