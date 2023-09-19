@@ -14,7 +14,7 @@ function ChatLobby() {
 
         const  chatRoom = {
           userName: userName.current.value,
-          channelName : channelName.current.value
+          caseId : channelName.current.value
         }
         userName.current.value = '';
         channelName.current.value = '';
