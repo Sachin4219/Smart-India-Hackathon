@@ -112,7 +112,7 @@ function ChatRoom() {
     <div className='chatBody'>
     <div className="chat-container">
       <header className="chat-header">
-        <h1><i className="fas fa-smile"></i> Chaton</h1>
+        <h1>Arbitration portal</h1>
         <a href="/user" className="btn" onClick = {() => handleLeaveRoom()}>Leave Room</a>
       </header>
       <main className="chat-main">

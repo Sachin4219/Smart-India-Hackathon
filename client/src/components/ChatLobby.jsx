@@ -28,7 +28,7 @@ function ChatLobby() {
         <div className='chatBody'>
         <div className="join-container">
         <header className="join-header">
-          <h1><i className="fas fa-smile"></i> Chaton</h1>
+          <h1>Arbitration Portal </h1>
         </header>
         <main className="join-main">
           <form  onSubmit={(e) => submitHandler(e)}>
