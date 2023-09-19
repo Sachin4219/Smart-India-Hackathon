@@ -5,7 +5,9 @@ import Transition from './Transition';
 // import UserAvatar from '../images/user-avatar-32.png';
 
 function DropdownProfile({
-  align,profile
+  align,
+  profile,
+  subprofile
 }) {
 
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -68,8 +70,8 @@ function DropdownProfile({
           onBlur={() => setDropdownOpen(false)}
         >
           <div className="pt-0.5 pb-2 px-3 mb-1 border-b border-slate-200">
-            <div className="banner font-medium text-slate-800">Acme Inc.</div>
-            <div className="banner text-xs text-slate-500 italic">Administrator</div>
+            <div className="banner font-medium text-slate-800">{profile}</div>
+            <div className="banner text-xs text-slate-500 italic">{subprofile}</div>
           </div>
           <ul>
             <li>

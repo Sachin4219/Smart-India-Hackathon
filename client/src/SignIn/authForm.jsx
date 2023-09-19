@@ -82,7 +82,7 @@ function AuthForm() {
   };
 
   return (
-    <div className="form-container">
+    <div className="formcenter form-container">
       <div className={`container ${isSignUp ? 'right-panel-active' : ''}`}>
         {/* Sign Up */}
         <div className="container__form container--signup">

@@ -105,7 +105,7 @@ function ChatRoom() {
     const handleLeaveRoom = async () => {
       // await currentChannel.leave()
       localStorage.clear();
-      window.location.href = "/user";
+      window.location.href = "/user/chat";
     }
 
     return (
