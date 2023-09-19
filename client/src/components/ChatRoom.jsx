@@ -28,7 +28,7 @@ function ChatRoom() {
     const submitHandler = (e) => {
       e.preventDefault();
       const message = messageRef.current.value;
-      socket.emit("chatMessage",{username:activeChat.userName, message});
+      socket.emit("chatMessage",{username:activeChat.userName, message, room:activeChat.caseId});
       messageRef.current.value = "";
     };
 
@@ -38,16 +38,19 @@ function ChatRoom() {
 
     socket.on("message", (message) => {
       console.log(message.text, message.username, message.time);
-      console.log("All messages",[...messages,messages])
-      setMessages([...messages, message]);
+      setMessages((state) => [
+        ...state,
+       message,
+      ]);
+      // console.log("New arer",newArr)
     });
 
     const handleLeaveRoom = () => {
       localStorage.clear()
-      socket.emit("disconnect", activeChat.userName);
+      socket.emit("disconnect", activeChat.userName, activeChat.caseId);
       window.location.href = "/user/chat"
     }
-
+    // console.log("Messages",messages)
     return (
     <div className='chatBody'>
     <div className="chat-container">
