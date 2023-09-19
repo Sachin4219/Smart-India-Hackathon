@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const AdvocateSchema = mongoose.Schema(
+const advocateSchema = mongoose.Schema(
     {
         firstName: {
             type: String,
@@ -19,5 +19,5 @@ const AdvocateSchema = mongoose.Schema(
     { timestamps: true }
 )
 
-const Advocate = mongoose.model("Advocate", AdvocateSchema);
+const Advocate = mongoose.model("Advocate", advocateSchema);
 export default Advocate;
