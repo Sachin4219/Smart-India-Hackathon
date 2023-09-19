@@ -44,3 +44,6 @@
 .direction{
   flex-direction: row-reverse;
 }
+.caseinfo{
+  width: 130vh;
+}
