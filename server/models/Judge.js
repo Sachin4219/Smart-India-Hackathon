@@ -10,10 +10,8 @@ const judgeSchema = mongoose.Schema(
             type: String,
             required: true,
         },
-        location: String,
-        description: String,
-        picturePath: String,
-        userPicturePath: String,
+        courtId : String,
+        password : String,
         caseList : [{type : 'ObjectId', ref: 'Case'}]
     },
     { timestamps: true }

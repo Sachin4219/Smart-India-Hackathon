@@ -50,13 +50,17 @@ function AuthForm() {
     })
     if (isSignUp) {
       const response = await axios.post(base_url + '/auth/register', {
+        profile: profile,
         firstName: firstname,
         lastName: lastname,
         caseId: caseId,
+        courtId: courtId,
+        advId: advId,
         phoneNumber: phonenumber,
         password: password,
       })
-      if (!response.statusText || response.statusText === "OK") {
+      console.log(response.status);
+      if (!response.statusText || response.statusText === "OK" || response.status == 201) {
         console.log(response)
         setIsSignUp(false);
         clearAllStates();
@@ -67,13 +71,25 @@ function AuthForm() {
     }
     else {
       const response = await axios.post(base_url + '/auth/login', {
+        profile: profile,
         caseId: caseId,
+        courtId: courtId,
+        advId: advId,
         phoneNumber: phonenumber,
         password: password,
       })
-      if (!response.statusText || response.statusText === "OK") {
+      if (response.statusText || response.statusText === "OK" || response.status == 200) {
         console.log(response)
-        window.location = "/user";
+        if (response.data.profile === "User") {
+          window.location = '/user';
+        }
+        if (response.data.profile === "Advocate") {
+          window.location = '/Advocate';
+        }
+        if (response.data.profile === "Judge") {
+          window.location = '/Judge';
+
+        }
       }
       else {
         alert("Some error occured")
