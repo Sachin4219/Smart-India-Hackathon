@@ -5,7 +5,7 @@ import Transition from './Transition';
 // import UserAvatar from '../images/user-avatar-32.png';
 
 function DropdownProfile({
-  align
+  align,profile
 }) {
 
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -45,7 +45,7 @@ function DropdownProfile({
       >
         <img className="w-8 h-8 rounded-full" src="https://as1.ftcdn.net/v2/jpg/02/01/33/54/1000_F_201335438_CNpY0iWaXXAV95Gj8BPB0tEJlMcxWeaZ.jpg" width="32" height="32" alt="User" />
         <div className="flex items-center truncate">
-          <span className="truncate ml-2 text-sm font-medium group-hover:text-slate-800">Judge</span>
+          <span className="truncate ml-2 text-sm font-medium group-hover:text-slate-800">{profile}</span>
           <svg className="w-3 h-3 shrink-0 ml-1 fill-current text-slate-400" viewBox="0 0 12 12">
             <path d="M5.9 11.4L.5 6l1.4-1.4 4 4 4-4L11.3 6z" />
           </svg>

@@ -1,0 +1,134 @@
+{
+    "presentCases":[
+        {
+            "id": 0,
+            "category": "1",
+            "members": [
+              {
+                "name": "User 01",
+                "link": "#0"
+              },
+              {
+                "name": "User 02",
+                "link": "#0"
+              },
+              {
+                "name": "User 03",
+                "link": "#0"
+              }
+            ],
+            "title": "Monitor progress in Real Time Value",
+            "link": "#0",
+            "content": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.",
+            "dates": {
+              "from": "Jan 20",
+              "to": "Jan 27"
+            },
+            "type": "One-Time"
+          },
+          {
+            "id": 2,
+            "category": "2",
+            "members": [
+              {
+                "name": "User 01",
+                "link": "#0"
+              },
+              {
+                "name": "User 02",
+                "link": "#0"
+              },
+              {
+                "name": "User 03",
+                "link": "#0"
+              }
+            ],
+            "title": "Monitor progress in Real Time Value",
+            "link": "#0",
+            "content": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.",
+            "dates": {
+              "from": "Sept 14",
+              "to": "Sept 20"
+            },
+            "type": "One-Time"
+          },
+          {
+            "id": 3,
+            "category": "3",
+            "members": [
+              {
+                "name": "User 01",
+                "link": "#0"
+              },
+              {
+                "name": "User 02",
+                "link": "#0"
+              },
+              {
+                "name": "User 03",
+                "link": "#0"
+              }
+            ],
+            "title": "Monitor progress in Real Time Value",
+            "link": "#0",
+            "content": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.",
+            "dates": {
+              "from": "Aug 20",
+              "to": "Aug 27"
+            },
+            "type": "One-Time"
+          },
+          {
+            "id": 4,
+            "category": "1",
+            "members": [
+              {
+                "name": "User 01",
+                "link": "#0"
+              },
+              {
+                "name": "User 02",
+                "link": "#0"
+              },
+              {
+                "name": "User 03",
+                "link": "#0"
+              }
+            ],
+            "title": "Monitor progress in Real Time Value",
+            "link": "#0",
+            "content": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.",
+            "dates": {
+              "from": "Jul 20",
+              "to": "Jul 27"
+            },
+            "type": "One-Time"
+        },
+        {
+            "id": 5,
+            "category": "1",
+            "members": [
+              {
+                "name": "User 01",
+                "link": "#0"
+              },
+              {
+                "name": "User 02",
+                "link": "#0"
+              },
+              {
+                "name": "User 03",
+                "link": "#0"
+              }
+            ],
+            "title": "Monitor progress in Real Time Value",
+            "link": "#0",
+            "content": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.",
+            "dates": {
+              "from": "Mar 20",
+              "to": "Mar 27"
+            },
+            "type": "One-Time"
+          }
+    ]
+}

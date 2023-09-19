@@ -7,7 +7,8 @@ import UserMenu from '../components/DropdownProfile';
 
 function Header({
   sidebarOpen,
-  setSidebarOpen
+  setSidebarOpen,
+  profile
 }) {
 
   const [searchModalOpen, setSearchModalOpen] = useState(false)
@@ -57,7 +58,7 @@ function Header({
             <Help align="right" /> */}
             {/*  Divider */}
             <hr className="w-px h-6 bg-slate-200 mx-3" />
-            <UserMenu align="right" />
+            <UserMenu align="right" profile={profile} />
 
           </div>
 
