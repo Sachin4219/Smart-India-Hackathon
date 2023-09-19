@@ -9,14 +9,11 @@ import alanBtn from '@alan-ai/alan-sdk-web';
 const HomePageUser = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
 
-// '47bada0b8df02b38bf62f6804858d3862e956eca572e1d8b807a3e2338fdd0dc/stage'
-
 useEffect(() => {
   const alanKey = '47bada0b8df02b38bf62f6804858d3862e956eca572e1d8b807a3e2338fdd0dc/stage';
 
   alanBtn({
     key: alanKey,
-    // Add any additional configurations or handlers here
   });
 }, []);
 
