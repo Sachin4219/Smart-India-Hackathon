@@ -1,8 +1,8 @@
 import React from 'react';
 
-function CaseInfo() {
+function CaseInfo(p) {
   return (
-    <div className="caseinfo">
+    <div className="{'caseinfo'+'p'}">
 
         {/* Billing Information */}
         <section>
