@@ -10,6 +10,7 @@ import {
   PresentCases,
   UpcomingCases,
   UserChat,
+  UserCalendar,
 } from "./pages/index.js";
 import AuthForm from "./SignIn/authForm";
 
@@ -44,7 +45,9 @@ function App() {
             path="/judge/pastCases"
             element={<PastCases profile="Judge" />}
           />
-          {/* <Route path="/user/chat/:roomId/:userId" element={<HomePageUser />} /> */}
+          <Route path="/user/calendar" element={<UserCalendar />} />
+          <Route path="/judge/calendar" element={<UserCalendar />} />
+          <Route path="/litigant/calendar" element={<UserCalendar />} />
         </Routes>
       </BrowserRouter>
     </div>

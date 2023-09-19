@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@supabase/auth-helpers-react": "^0.4.2",
+    "@supabase/supabase-js": "^2.33.2",
     "@tailwindcss/forms": "^0.5.6",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -10,7 +12,9 @@
     "agora-rtm-react": "^1.1.2",
     "agora-rtm-sdk": "^1.5.1",
     "axios": "^1.5.0",
+    "moment": "^2.29.4",
     "react": "^18.2.0",
+    "react-big-calendar": "^1.8.4",
     "react-dom": "^18.2.0",
     "react-flatpickr": "^3.10.13",
     "react-router-dom": "^6.16.0",
