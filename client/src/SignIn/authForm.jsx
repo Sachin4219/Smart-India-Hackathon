@@ -56,7 +56,8 @@ function AuthForm() {
         phoneNumber: phonenumber,
         password: password,
       })
-      if (!response.statusText || response.statusText === "OK") {
+      console.log(response.status);
+      if (!response.statusText || response.statusText === "OK" || response.status == 201) {
         console.log(response)
         setIsSignUp(false);
         clearAllStates();
@@ -71,7 +72,7 @@ function AuthForm() {
         phoneNumber: phonenumber,
         password: password,
       })
-      if (!response.statusText || response.statusText === "OK") {
+      if (!response.statusText || response.statusText === "OK" || response.status == 201) {
         console.log(response)
         window.location = "/user";
       }

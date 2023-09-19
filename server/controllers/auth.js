@@ -14,16 +14,17 @@ export const getUsers = async (req, res) => {
 
 export const register = async (req, res) => {
   try {
-    const { firstName, lastName, caseId, password, picturePath, phoneNumber } =
+    // console.log(req.body);
+    const { firstName, lastName, caseId, phoneNumber, password } =
       req.body;
-    // const salt = await bcrypt.genSalt();
-    const passwordHash = await bcrypt.hash(password, 10);
-
+    const salt = await bcrypt.genSalt();
+    const passwordHash = await bcrypt.hash(password, salt);
+    console.log(passwordHash)
     const newUser = new User({
       firstName,
       lastName,
-      caseId,
       phoneNumber,
+      caseId,
       password: passwordHash,
       // picturePath
     });
@@ -31,6 +32,7 @@ export const register = async (req, res) => {
     res.status(201).json({ data: savedUser });
   } catch (err) {
     res.status(500).json({ error: err.message });
+    // console.log('error');
   }
 };
 
