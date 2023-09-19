@@ -17,7 +17,7 @@
 		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-body {
+form-container {
 	align-items: center;
 	background-color: var(--white);
 	/* background: url("https://res.cloudinary.com/dci1eujqw/image/upload/v1616769558/Codepen/waldemar-brandt-aThdSdgx0YM-unsplash_cnq4sb.jpg");
@@ -187,6 +187,10 @@ body {
 	padding: 0 3rem;
 	height: 100%;
 	text-align: center;
+}
+
+.form-user{
+	height: 90%;
 }
 
 .input {
