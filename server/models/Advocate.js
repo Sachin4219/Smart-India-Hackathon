@@ -14,7 +14,7 @@ const advocateSchema = mongoose.Schema(
         description: String,
         picturePath: String,
         userPicturePath: String,
-        caseList : [{type : 'ObjectId', ref: 'Case'}]
+        caseList: [{ type: 'ObjectId', ref: 'Case' }]
     },
     { timestamps: true }
 )

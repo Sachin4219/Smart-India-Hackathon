@@ -1,39 +1,31 @@
 import React, { useState } from 'react';
-
+import upcomingCases from './upcomingCases.json';
+import presentCases from './presentCases.json';
+import pastCases from './pastCases.json'
 import Sidebar from '../partials/Sidebar';
 import Header from '../partials/Header';
-import WelcomeBanner from '../partials/WelcomeBanner';
-import Datepicker from '../components/Datepicker';
-import DashboardCard10 from '../partials/UpdatesCard';
 import CampaignsCard from '../partials/CampaignsCard';
-import React from 'react'
-import ChatLobby from '../components/ChatLobby.jsx'
-import ChatRoom from '../components/ChatRoom.jsx';
 
-const HomePageUser = () => {
+const PresentCases = ({profile}) => {
+
     const [sidebarOpen, setSidebarOpen] = useState(false);
-    
-  const [isActive, setIsActive] = React.useState("false");
-  const activateChatRoom = JSON.parse(localStorage.getItem("activeChat"));
 
   return (
     <div className="flex h-screen overflow-hidden">
 
       {/* Sidebar */}
-      {/* <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} /> */}
+      <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} profile={profile} />
 
       {/* Content area */}
       <div className="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
 
         {/*  Site header */}
-        <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} profile="User" subprofile="Victim" />
+        <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} profile={profile} />
 
         <main>
           <div className="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-9xl mx-auto">
 
             {/* Welcome banner */}
-            <WelcomeBanner profile="User" />
-
             {/* Dashboard actions */}
             <div className="direction sm:flex sm:justify-between sm:items-center mb-8" >
 
@@ -45,13 +37,6 @@ const HomePageUser = () => {
                 {/* Filter button */}
                 {/* <FilterButton align="right" /> */}
                 {/* Datepicker built with flatpickr */}
-                <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white">
-                  {/* <svg className="w-4 h-4 fill-current opacity-50 shrink-0" viewBox="0 0 16 16">
-                    <path d="M15 7H9V1c0-.6-.4-1-1-1S7 .4 7 1v6H1c-.6 0-1 .4-1 1s.4 1 1 1h6v6c0 .6.4 1 1 1s1-.4 1-1V9h6c.6 0 1-.4 1-1s-.4-1-1-1z" />
-                  </svg> */}
-                  <span className="hidden xs:block ml-2">Group Conversation</span>
-                </button>  
-                <Datepicker align="right" />
                 {/* Add view button */}
                 {/* <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white">
                   <svg className="w-4 h-4 fill-current opacity-50 shrink-0" viewBox="0 0 16 16">
@@ -62,13 +47,14 @@ const HomePageUser = () => {
               </div>
 
             </div>
-            <div>
-               {activateChatRoom ? <ChatRoom/> : <ChatLobby/>}
+            <div className='mb-10'>
+            <div className="flex flex-column justify-between my-2">
+            <div className='banner text-2 md:text-3xl text-slate-800 font-bold mb-1'>Present Cases</div> 
             </div>
 
             <div className="grid grid-cols-12 gap-6">
-              {/* {
-                items.map(item => {
+              {
+                presentCases.presentCases.map(item => {
                   return (
                     <CampaignsCard
                       key={item.id}
@@ -83,15 +69,9 @@ const HomePageUser = () => {
                     />
                   )
                 })
-              } */}
+              }
             </div>
-
-            {/* Cards */}
-            <div className="grid grid-cols-12 gap-6">
-                <DashboardCard10 />
-             
             </div>
-
           </div>
         </main>
 
@@ -101,4 +81,4 @@ const HomePageUser = () => {
   );
 }
 
-export default HomePageUser;
+export default PresentCases;

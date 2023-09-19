@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
+import presentCases from './presentCases.json';
+import pastCases from './pastCases.json'
+import { Link } from 'react-router-dom';
 
 import Sidebar from '../partials/Sidebar';
 import Header from '../partials/Header';
 import WelcomeBanner from '../partials/WelcomeBanner';
 import Datepicker from '../components/Datepicker';
+import DashboardCard10 from '../partials/UpdatesCard';
+import CampaignsCard from '../partials/CampaignsCard';
 
 const HomePageLitigant = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -12,22 +17,22 @@ const HomePageLitigant = () => {
     <div className="flex h-screen overflow-hidden">
 
       {/* Sidebar */}
-      <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+      <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} profile="Advocate" />
 
       {/* Content area */}
       <div className="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
 
         {/*  Site header */}
-        <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+        <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} profile="Advocate" />
 
         <main>
           <div className="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-9xl mx-auto">
 
             {/* Welcome banner */}
-            <WelcomeBanner profile="Lawyer" />
+            <WelcomeBanner profile="Advocate " />
 
             {/* Dashboard actions */}
-            <div className="sm:flex sm:justify-between sm:items-center mb-8">
+            <div className="direction sm:flex sm:justify-between sm:items-center mb-8" >
 
               {/* Left: Avatars */}
               {/* <DashboardAvatars /> */}
@@ -48,10 +53,69 @@ const HomePageLitigant = () => {
               </div>
 
             </div>
+            <div className='mb-10'>
+            <div className="flex flex-column justify-between my-2">
+            <div className='banner text-2 md:text-3xl text-slate-800 font-bold mb-1'>Present Cases</div>
+            <Link to='/litigant/presentCases'>
+            <button className='relative inline-flex text-sm sm:text-base rounded-full font-medium border-2 border-transparent transition-colors outline-transparent focus:outline-transparent disabled:opacity-50 disabled:pointer-events-none disabled:opacity-40 disabled:hover:opacity-40 disabled:cursor-not-allowed disabled:shadow-none
+        text-white bg-[#4040F2] hover:bg-[#3333D1] focus:border-[#B3B3FD] focus:bg-[#4040F2] px-4 py-1 sm:py-1.5 sm:px-5'>            
+        View More</button></Link>  
+            </div>
+
+            <div className="grid grid-cols-12 gap-6">
+              {
+                presentCases.presentCases.slice(0,3).map(item => {
+                  return (
+                    <CampaignsCard
+                      key={item.id}
+                      id={item.id}
+                      category={item.category}
+                      // members={item.members}
+                      title={item.title}
+                      link={item.link}
+                      content={item.content}
+                      dates={item.dates}
+                      type={item.type}
+                    />
+                  )
+                })
+              }
+            </div>
+            </div>
+            
+            <div className='mb-10'>
+            <div className="flex flex-column justify-between my-2">
+            <div className='banner text-2 md:text-3xl text-slate-800 font-bold mb-1'>Past Cases</div>
+            <Link to='/litigant/pastCases'>
+            <button class='relative inline-flex text-sm sm:text-base rounded-full font-medium border-2 border-transparent transition-colors outline-transparent focus:outline-transparent disabled:opacity-50 disabled:pointer-events-none disabled:opacity-40 disabled:hover:opacity-40 disabled:cursor-not-allowed disabled:shadow-none
+        text-white bg-[#4040F2] hover:bg-[#3333D1] focus:border-[#B3B3FD] focus:bg-[#4040F2] px-4 py-1 sm:py-1.5 sm:px-5'>            
+        View More</button></Link>  
+            </div>
+
+            <div className="grid grid-cols-12 gap-6">
+              {
+                pastCases.pastCases.slice(0,3).map(item => {
+                  return (
+                    <CampaignsCard
+                      key={item.id}
+                      id={item.id}
+                      category={item.category}
+                      // members={item.members}
+                      title={item.title}
+                      link={item.link}
+                      content={item.content}
+                      dates={item.dates}
+                      type={item.type}
+                    />
+                  )
+                })
+              }
+            </div>
+            </div>
 
             {/* Cards */}
             <div className="grid grid-cols-12 gap-6">
-
+                <DashboardCard10 />
              
             </div>
 
