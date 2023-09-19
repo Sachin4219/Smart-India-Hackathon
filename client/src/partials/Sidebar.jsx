@@ -5,7 +5,8 @@ import SidebarLinkGroup from './SidebarLinkGroup';
 
 function Sidebar({
   sidebarOpen,
-  setSidebarOpen
+  setSidebarOpen,
+  profile
 }) {
 
   const location = useLocation();
@@ -218,7 +219,7 @@ function Sidebar({
                           <li className="mb-1 last:mb-0">
                             <NavLink
                               end
-                              to="/ecommerce/customers"
+                              to="/presentCases"
                               className={({ isActive }) =>
                                 'block transition duration-150 truncate ' + (isActive ? 'text-indigo-500' : 'text-slate-400 hover:text-slate-200')
                               }
@@ -231,7 +232,7 @@ function Sidebar({
                           <li className="mb-1 last:mb-0">
                             <NavLink
                               end
-                              to="/ecommerce/orders"
+                              to="/pastCases"
                               className={({ isActive }) =>
                                 'block transition duration-150 truncate ' + (isActive ? 'text-indigo-500' : 'text-slate-400 hover:text-slate-200')
                               }
@@ -244,7 +245,7 @@ function Sidebar({
                           <li className="mb-1 last:mb-0">
                             <NavLink
                               end
-                              to="/ecommerce/invoices"
+                              to="/upcomingCases"
                               className={({ isActive }) =>
                                 'block transition duration-150 truncate ' + (isActive ? 'text-indigo-500' : 'text-slate-400 hover:text-slate-200')
                               }
@@ -298,6 +299,46 @@ function Sidebar({
                   );
                 }}
               </SidebarLinkGroup>
+              {(profile==='lawyer') ? 
+              <SidebarLinkGroup activecondition={pathname.includes('profile')}>
+                {(handleClick, open) => {
+                  return (
+                    <React.Fragment>
+                      <a
+                        href="#0"
+                        className={`block text-slate-200 truncate transition duration-150 ${
+                          pathname.includes('community') ? 'hover:text-slate-200' : 'hover:text-white'
+                        }`}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          handleClick();
+                          setSidebarExpanded(true);
+                        }}
+                      >
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center">
+                            <svg className="shrink-0 h-6 w-6" viewBox="0 0 24 24">
+                              <path
+                                className={`fill-current ${pathname.includes('community') ? 'text-indigo-500' : 'text-slate-600'}`}
+                                d="M18.974 8H22a2 2 0 012 2v6h-2v5a1 1 0 01-1 1h-2a1 1 0 01-1-1v-5h-2v-6a2 2 0 012-2h.974zM20 7a2 2 0 11-.001-3.999A2 2 0 0120 7zM2.974 8H6a2 2 0 012 2v6H6v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5H0v-6a2 2 0 012-2h.974zM4 7a2 2 0 11-.001-3.999A2 2 0 014 7z"
+                              />
+                              <path
+                                className={`fill-current ${pathname.includes('community') ? 'text-indigo-300' : 'text-slate-400'}`}
+                                d="M12 6a3 3 0 110-6 3 3 0 010 6zm2 18h-4a1 1 0 01-1-1v-6H6v-6a3 3 0 013-3h6a3 3 0 013 3v6h-3v6a1 1 0 01-1 1z"
+                              />
+                            </svg>
+                            <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
+                              Legal Chat
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </React.Fragment>
+                  );
+                }}
+              </SidebarLinkGroup>
+               :<></>}
+              
               {/* Calendar */}
               <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${pathname.includes('calendar') && 'bg-slate-900'}`}>
                 <NavLink
@@ -321,6 +362,7 @@ function Sidebar({
                   </div>
                 </NavLink>
               </li>
+
             </ul>
           </div>
         </div>

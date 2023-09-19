@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import upcomingCases from './upcomingCases.json';
+import presentCases from './presentCases.json';
+import pastCases from './pastCases.json'
+import { Link } from 'react-router-dom';
 
 import Sidebar from '../partials/Sidebar';
 import Header from '../partials/Header';
@@ -9,247 +13,19 @@ import CampaignsCard from '../partials/CampaignsCard';
 
 const HomePageJudge = () => {
 
-  const items = [
-    {
-      id: 0,
-      category: '1',
-      members: [
-        {
-          name: 'User 01',
-          link: '#0'
-        },
-        {
-          name: 'User 02',
-          link: '#0'
-        },
-        {
-          name: 'User 03',
-          link: '#0'
-        },
-      ],
-      title: 'Monitor progress in Real Time Value',
-      link: '#0',
-      content: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.',
-      dates: {
-        from: 'Jan 20',
-        to: 'Jan 27'
-      },
-      type: 'One-Time'
-    },
-    {
-      id: 1,
-      category: '2',
-      members: [
-        {
-          name: 'User 04',
-          link: '#0'
-        },
-        {
-          name: 'User 05',
-          link: '#0'
-        },
-      ],
-      title: 'Monitor progress in Real Time Value',
-      link: '#0',
-      content: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.',
-      dates: {
-        from: 'Jan 20',
-        to: 'Jan 27'
-      },
-      type: 'Off-Track'
-    },
-    {
-      id: 3,
-      category: '3',
-      members: [
-        {
-          name: 'User 07',
-          link: '#0'
-        },
-        {
-          name: 'User 08',
-          link: '#0'
-        },
-        {
-          name: 'User 09',
-          link: '#0'
-        },
-      ],
-      title: 'Monitor progress in Real Time Value',
-      link: '#0',
-      content: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.',
-      dates: {
-        from: 'Jan 20',
-        to: 'Jan 27'
-      },
-      type: 'At Risk'
-    },
-    {
-      id: 4,
-      category: '1',
-      members: [
-        {
-          name: 'User 10',
-          link: '#0'
-        },
-      ],
-      title: 'Monitor progress in Real Time Value',
-      link: '#0',
-      content: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.',
-      dates: {
-        from: 'Jan 20',
-        to: 'Jan 27'
-      },
-      type: 'At Risk'
-    },
-    {
-      id: 5,
-      category: '4',
-      members: [
-        {
-          name: 'User 11',
-          link: '#0'
-        },
-        {
-          name: 'User 05',
-          link: '#0'
-        },
-        {
-          name: 'User 12',
-          link: '#0'
-        },
-      ],
-      title: 'Monitor progress in Real Time Value',
-      link: '#0',
-      content: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.',
-      dates: {
-        from: 'Jan 20',
-        to: 'Jan 27'
-      },
-      type: 'One-Time'
-    },
-    {
-      id: 6,
-      category: '2',
-      members: [
-        {
-          name: 'User 07',
-          link: '#0'
-        },
-        {
-          name: 'User 04',
-          link: '#0'
-        },
-        {
-          name: 'User 11',
-          link: '#0'
-        },
-      ],
-      title: 'Monitor progress in Real Time Value',
-      link: '#0',
-      content: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.',
-      dates: {
-        from: 'Jan 20',
-        to: 'Jan 27'
-      },
-      type: 'At Risk'
-    },
-    {
-      id: 7,
-      category: '4',
-      members: [
-        {
-          name: 'User 01',
-          link: '#0'
-        },
-        {
-          name: 'User 02',
-          link: '#0'
-        },
-        {
-          name: 'User',
-          link: '#0'
-        },
-      ],
-      title: 'Monitor progress in Real Time Value',
-      link: '#0',
-      content: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.',
-      dates: {
-        from: 'Jan 20',
-        to: 'Jan 27'
-      },
-      type: 'One-Time'
-    },
-    {
-      id: 8,
-      category: '1',
-      members: [
-        {
-          name: 'User 09',
-          link: '#0'
-        },
-        {
-          name: 'User 01',
-          link: '#0'
-        },
-      ],
-      title: 'Monitor progress in Real Time Value',
-      link: '#0',
-      content: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.',
-      dates: {
-        from: 'Jan 20',
-        to: 'Jan 27'
-      },
-      type: 'Off-Track'
-    },
-    {
-      id: 9,
-      category: '3',
-      members: [
-        {
-          name: 'User 07',
-          link: '#0'
-        },
-        {
-          name: 'User 08',
-          link: '#0'
-        },
-        {
-          name: 'User 09',
-          link: '#0'
-        },
-        {
-          name: 'User 06',
-          link: '#0'
-        },
-      ],
-      title: 'Monitor progress in Real Time Value',
-      link: '#0',
-      content: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.',
-      dates: {
-        from: 'Jan 20',
-        to: 'Jan 27'
-      },
-      type: 'One-Time'
-    },
-  ];
-  
-  
-
-
     const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
     <div className="flex h-screen overflow-hidden">
 
       {/* Sidebar */}
-      <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+      <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} profile="Judge" />
 
       {/* Content area */}
       <div className="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
 
         {/*  Site header */}
-        <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+        <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} profile="Judge" />
 
         <main>
           <div className="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-9xl mx-auto">
@@ -279,10 +55,18 @@ const HomePageJudge = () => {
               </div>
 
             </div>
+            <div className='mb-10'>
+            <div className="flex flex-column justify-between my-2">
+            <div className='banner text-2 md:text-3xl text-slate-800 font-bold mb-1'>Present Cases</div>
+            <Link to='/presentCases'>
+            <button className='relative inline-flex text-sm sm:text-base rounded-full font-medium border-2 border-transparent transition-colors outline-transparent focus:outline-transparent disabled:opacity-50 disabled:pointer-events-none disabled:opacity-40 disabled:hover:opacity-40 disabled:cursor-not-allowed disabled:shadow-none
+        text-white bg-[#4040F2] hover:bg-[#3333D1] focus:border-[#B3B3FD] focus:bg-[#4040F2] px-4 py-1 sm:py-1.5 sm:px-5'>            
+        View More</button></Link>  
+            </div>
 
             <div className="grid grid-cols-12 gap-6">
               {
-                items.map(item => {
+                presentCases.presentCases.slice(0,3).map(item => {
                   return (
                     <CampaignsCard
                       key={item.id}
@@ -298,6 +82,66 @@ const HomePageJudge = () => {
                   )
                 })
               }
+            </div>
+            </div>
+            <div className='mb-10'>
+            <div className="flex flex-column justify-between my-2">
+            <div className='banner text-2 md:text-3xl text-slate-800 font-bold mb-1'>Upcoming Cases</div>
+            <Link to='/upcomingCases'>
+            <button class='relative inline-flex text-sm sm:text-base rounded-full font-medium border-2 border-transparent transition-colors outline-transparent focus:outline-transparent disabled:opacity-50 disabled:pointer-events-none disabled:opacity-40 disabled:hover:opacity-40 disabled:cursor-not-allowed disabled:shadow-none
+        text-white bg-[#4040F2] hover:bg-[#3333D1] focus:border-[#B3B3FD] focus:bg-[#4040F2] px-4 py-1 sm:py-1.5 sm:px-5'>            
+        View More</button></Link>  
+            </div>
+
+            <div className="grid grid-cols-12 gap-6">
+              {
+                upcomingCases.upcomingCases.slice(0,3).map(item => {
+                  return (
+                    <CampaignsCard
+                      key={item.id}
+                      id={item.id}
+                      category={item.category}
+                      // members={item.members}
+                      title={item.title}
+                      link={item.link}
+                      content={item.content}
+                      dates={item.dates}
+                      type={item.type}
+                    />
+                  )
+                })
+              }
+            </div>
+            </div>
+            
+            <div className='mb-10'>
+            <div className="flex flex-column justify-between my-2">
+            <div className='banner text-2 md:text-3xl text-slate-800 font-bold mb-1'>Past Cases</div>
+            <Link to='/pastCases'>
+            <button class='relative inline-flex text-sm sm:text-base rounded-full font-medium border-2 border-transparent transition-colors outline-transparent focus:outline-transparent disabled:opacity-50 disabled:pointer-events-none disabled:opacity-40 disabled:hover:opacity-40 disabled:cursor-not-allowed disabled:shadow-none
+        text-white bg-[#4040F2] hover:bg-[#3333D1] focus:border-[#B3B3FD] focus:bg-[#4040F2] px-4 py-1 sm:py-1.5 sm:px-5'>            
+        View More</button></Link>  
+            </div>
+
+            <div className="grid grid-cols-12 gap-6">
+              {
+                pastCases.pastCases.slice(0,3).map(item => {
+                  return (
+                    <CampaignsCard
+                      key={item.id}
+                      id={item.id}
+                      category={item.category}
+                      // members={item.members}
+                      title={item.title}
+                      link={item.link}
+                      content={item.content}
+                      dates={item.dates}
+                      type={item.type}
+                    />
+                  )
+                })
+              }
+            </div>
             </div>
 
             {/* Cards */}
