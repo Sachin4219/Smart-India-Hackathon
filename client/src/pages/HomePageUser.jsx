@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import Sidebar from '../partials/Sidebar';
 import Header from '../partials/Header';
@@ -29,7 +30,8 @@ const HomePageUser = () => {
 
               <div className="grid grid-flow-col sm:auto-cols-max justify-start sm:justify-end gap-2">
                 <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white">
-                  <span className="hidden xs:block ml-2">Group Conversation</span>
+                  <span className="hidden xs:block ml-2">
+                  <Link to='/user/chat'>Group Conversation</Link></span>
                 </button>  
                 <Datepicker align="right" />
               </div>
