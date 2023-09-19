@@ -21,11 +21,11 @@ function ChatRoom() {
 
     useEffect (() => {
         async function doSomething() {
-            await login()
-            currentChannel.getMembers().then(members => {
-              setUsers(members)
-            })
-
+            // await login()
+            // currentChannel.getMembers().then(members => {
+            //   setUsers(members)
+            // })
+            setUsers([...users, activeChat.userName])
             renderChannelData(currentChannel);
           } 
           doSomething()
@@ -51,15 +51,15 @@ function ChatRoom() {
         e.preventDefault();
         console.log(messageRef.current.value);
         const message = client.createMessage({ text: messageRef.current.value, messageType: 'TEXT'})
-        const senderId  = activeChat.userName
-        currentChannel.sendMessage(message, senderId).then(() => {
-          console.log("Message Sent: ", messageRef.current.value);
-          messageRef.current.value = ''
-          console.log(message)
+
+        // currentChannel.sendMessage(message, senderId).then(() => {
+        //   console.log("Message Sent: ", messageRef.current.value);
+        //   messageRef.current.value = ''
+        //   console.log(message)
           renderMessage({...message, senderId: activeChat.userName})
-        }).catch(error => { 
-          console.log(error)
-        });
+        // }).catch(error => { 
+        //   console.log(error)
+        // });
     } 
 
     function renderChannelData(channel) {
@@ -95,15 +95,15 @@ function ChatRoom() {
     }
 
 
-    currentChannel.on('ChannelMessage', (message, senderId) => {
-      // const message = client.createMessage({ messageType, text, senderId })
-      console.log(message)
-      const { messageType, text} = message
-      renderMessage({ messageType, text, senderId})
-    })
+    // currentChannel.on('ChannelMessage', (message, senderId) => {
+    //   // const message = client.createMessage({ messageType, text, senderId })
+    //   console.log(message)
+    //   const { messageType, text} = message
+    //   renderMessage({ messageType, text, senderId})
+    // })
 
     const handleLeaveRoom = async () => {
-      await currentChannel.leave()
+      // await currentChannel.leave()
       localStorage.clear();
       window.location.href = "/user";
     }

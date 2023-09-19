@@ -8,7 +8,6 @@ function ChatLobby() {
     const userName = useRef();
     const channelName = useRef();
 
-
     function submitHandler(e) {
 
         e.preventDefault();
@@ -17,6 +16,8 @@ function ChatLobby() {
           userName: userName.current.value,
           channelName : channelName.current.value
         }
+        userName.current.value = '';
+        channelName.current.value = '';
         console.log(chatRoom)
 
         localStorage.setItem("activeChat", JSON.stringify(chatRoom));
