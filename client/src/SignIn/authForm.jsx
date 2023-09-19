@@ -82,10 +82,11 @@ function AuthForm() {
   };
 
   return (
+    <div className="form-container">
     <div className={`container ${isSignUp ? 'right-panel-active' : ''}`}>
       {/* Sign Up */}
       <div className="container__form container--signup">
-        <form action="#" className="form" id="form1" onSubmit={handleSubmit}>
+        <form action="#" className={`form ${(profile === 'User') ? 'form-user' : ''}`} id="form1" onSubmit={handleSubmit} >
         
         <h2 className="form__title">Sign Up {profile ? `as ${profile}` : ""}</h2>
           <select value={profile} onChange={handleChange} className='input'>
@@ -98,7 +99,7 @@ function AuthForm() {
           {(profile==='Judge') ? (
             <div>
             <div style={{display: 'flex'}}>
-              <input type="text" placeholder="First Name" className="input" style={{}} onChange={(e) => setFirstname(e.target.value)} value={firstname}/>
+              <input type="text" placeholder="First Name" className="input" style={{marginRight: 10}} onChange={(e) => setFirstname(e.target.value)} value={firstname}/>
               <input type="text" placeholder="Last Name" className="input" style={{}} onChange={(e) => setLastname(e.target.value)} value={lastname}/>
               </div>
               <input type="text" placeholder="CourtId" className="input"   onChange={(e) => setCourtId(e.target.value)} value={courtId} />
@@ -107,7 +108,7 @@ function AuthForm() {
           ): (profile==='Advocate') ? (
             <div>
             <div style={{display: 'flex'}}>
-            <input type="text" placeholder="First Name" className="input" style={{}} onChange={(e) => setFirstname(e.target.value)} value={firstname}/>
+            <input type="text" placeholder="First Name" className="input" style={{marginRight: 10}} onChange={(e) => setFirstname(e.target.value)} value={firstname}/>
             <input type="text" placeholder="Last Name" className="input" style={{}} onChange={(e) => setLastname(e.target.value)} value={lastname}/>
               </div>
               <input type="text" placeholder="AdvId" className="input"  onChange={(e) => setAdvId(e.target.value)} value={advId} />
@@ -116,7 +117,7 @@ function AuthForm() {
           ): (profile ==='User') ? (
             <div>
             <div style={{display: 'flex'}}>
-            <input type="text" placeholder="First Name" className="input" style={{}} onChange={(e) => setFirstname(e.target.value)} value={firstname}/>
+            <input type="text" placeholder="First Name" className="input" style={{marginRight: 10}} onChange={(e) => setFirstname(e.target.value)} value={firstname}/>
             <input type="text" placeholder="Last Name" className="input" style={{}} onChange={(e) => setLastname(e.target.value)} value={lastname}/>
               </div>
               <input type="text" placeholder="CaseId" className="input" onChange={(e) => setCaseId(e.target.value)} value={caseId} />
@@ -174,6 +175,7 @@ function AuthForm() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
