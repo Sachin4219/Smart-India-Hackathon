@@ -18,7 +18,7 @@ def score_case(data):
                          'Intellectual Property Cases':5,'Consumer Cases':4,'Property Cases':3,
                           'Labor and Employment Cases':2,'Writ Petitions':1  }
             score=0.0
-            casetype=data['Casde Type']
+            casetype=data['Case Type']
             score+=casetype_score[casetype]
             score+=data['Number of parties involved in the case']
             if data['Diversity of Interests between parties'] == 'Yes':
