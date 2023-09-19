@@ -153,7 +153,7 @@ form-container {
 
 .btn {
 	background-color: var(--blue);
-	background-image: linear-gradient(90deg, var(--blue) 0%, var(--lightblue) 74%);
+	/* background-image: linear-gradient(90deg, var(--blue) 0%, var(--lightblue) 74%); */
 	border-radius: 20px;
 	border: 1px solid var(--blue);
 	color: var(--white);
@@ -213,4 +213,9 @@ form-container {
 		opacity: 1;
 		z-index: 5;
 	}
+}
+.formcenter{
+	margin-top: 23vh;
+	justify-content: center;
+    display: flex;
 }
