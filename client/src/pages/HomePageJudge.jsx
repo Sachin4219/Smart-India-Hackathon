@@ -4,9 +4,239 @@ import Sidebar from '../partials/Sidebar';
 import Header from '../partials/Header';
 import WelcomeBanner from '../partials/WelcomeBanner';
 import Datepicker from '../components/Datepicker';
-
+import DashboardCard10 from '../partials/UpdatesCard';
+import CampaignsCard from '../partials/CampaignsCard';
 
 const HomePageJudge = () => {
+
+  const items = [
+    {
+      id: 0,
+      category: '1',
+      members: [
+        {
+          name: 'User 01',
+          link: '#0'
+        },
+        {
+          name: 'User 02',
+          link: '#0'
+        },
+        {
+          name: 'User 03',
+          link: '#0'
+        },
+      ],
+      title: 'Monitor progress in Real Time Value',
+      link: '#0',
+      content: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.',
+      dates: {
+        from: 'Jan 20',
+        to: 'Jan 27'
+      },
+      type: 'One-Time'
+    },
+    {
+      id: 1,
+      category: '2',
+      members: [
+        {
+          name: 'User 04',
+          link: '#0'
+        },
+        {
+          name: 'User 05',
+          link: '#0'
+        },
+      ],
+      title: 'Monitor progress in Real Time Value',
+      link: '#0',
+      content: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.',
+      dates: {
+        from: 'Jan 20',
+        to: 'Jan 27'
+      },
+      type: 'Off-Track'
+    },
+    {
+      id: 3,
+      category: '3',
+      members: [
+        {
+          name: 'User 07',
+          link: '#0'
+        },
+        {
+          name: 'User 08',
+          link: '#0'
+        },
+        {
+          name: 'User 09',
+          link: '#0'
+        },
+      ],
+      title: 'Monitor progress in Real Time Value',
+      link: '#0',
+      content: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.',
+      dates: {
+        from: 'Jan 20',
+        to: 'Jan 27'
+      },
+      type: 'At Risk'
+    },
+    {
+      id: 4,
+      category: '1',
+      members: [
+        {
+          name: 'User 10',
+          link: '#0'
+        },
+      ],
+      title: 'Monitor progress in Real Time Value',
+      link: '#0',
+      content: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.',
+      dates: {
+        from: 'Jan 20',
+        to: 'Jan 27'
+      },
+      type: 'At Risk'
+    },
+    {
+      id: 5,
+      category: '4',
+      members: [
+        {
+          name: 'User 11',
+          link: '#0'
+        },
+        {
+          name: 'User 05',
+          link: '#0'
+        },
+        {
+          name: 'User 12',
+          link: '#0'
+        },
+      ],
+      title: 'Monitor progress in Real Time Value',
+      link: '#0',
+      content: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.',
+      dates: {
+        from: 'Jan 20',
+        to: 'Jan 27'
+      },
+      type: 'One-Time'
+    },
+    {
+      id: 6,
+      category: '2',
+      members: [
+        {
+          name: 'User 07',
+          link: '#0'
+        },
+        {
+          name: 'User 04',
+          link: '#0'
+        },
+        {
+          name: 'User 11',
+          link: '#0'
+        },
+      ],
+      title: 'Monitor progress in Real Time Value',
+      link: '#0',
+      content: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.',
+      dates: {
+        from: 'Jan 20',
+        to: 'Jan 27'
+      },
+      type: 'At Risk'
+    },
+    {
+      id: 7,
+      category: '4',
+      members: [
+        {
+          name: 'User 01',
+          link: '#0'
+        },
+        {
+          name: 'User 02',
+          link: '#0'
+        },
+        {
+          name: 'User',
+          link: '#0'
+        },
+      ],
+      title: 'Monitor progress in Real Time Value',
+      link: '#0',
+      content: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.',
+      dates: {
+        from: 'Jan 20',
+        to: 'Jan 27'
+      },
+      type: 'One-Time'
+    },
+    {
+      id: 8,
+      category: '1',
+      members: [
+        {
+          name: 'User 09',
+          link: '#0'
+        },
+        {
+          name: 'User 01',
+          link: '#0'
+        },
+      ],
+      title: 'Monitor progress in Real Time Value',
+      link: '#0',
+      content: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.',
+      dates: {
+        from: 'Jan 20',
+        to: 'Jan 27'
+      },
+      type: 'Off-Track'
+    },
+    {
+      id: 9,
+      category: '3',
+      members: [
+        {
+          name: 'User 07',
+          link: '#0'
+        },
+        {
+          name: 'User 08',
+          link: '#0'
+        },
+        {
+          name: 'User 09',
+          link: '#0'
+        },
+        {
+          name: 'User 06',
+          link: '#0'
+        },
+      ],
+      title: 'Monitor progress in Real Time Value',
+      link: '#0',
+      content: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.',
+      dates: {
+        from: 'Jan 20',
+        to: 'Jan 27'
+      },
+      type: 'One-Time'
+    },
+  ];
+  
+  
+
+
     const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
@@ -28,7 +258,7 @@ const HomePageJudge = () => {
             <WelcomeBanner />
 
             {/* Dashboard actions */}
-            <div className="sm:flex sm:justify-between sm:items-center mb-8">
+            <div className="direction sm:flex sm:justify-between sm:items-center mb-8" >
 
               {/* Left: Avatars */}
               {/* <DashboardAvatars /> */}
@@ -50,9 +280,29 @@ const HomePageJudge = () => {
 
             </div>
 
+            <div className="grid grid-cols-12 gap-6">
+              {
+                items.map(item => {
+                  return (
+                    <CampaignsCard
+                      key={item.id}
+                      id={item.id}
+                      category={item.category}
+                      // members={item.members}
+                      title={item.title}
+                      link={item.link}
+                      content={item.content}
+                      dates={item.dates}
+                      type={item.type}
+                    />
+                  )
+                })
+              }
+            </div>
+
             {/* Cards */}
             <div className="grid grid-cols-12 gap-6">
-
+                <DashboardCard10 />
              
             </div>
 
@@ -65,4 +315,4 @@ const HomePageJudge = () => {
   );
 }
 
-export default HomePageJudge
+export default HomePageJudge;
