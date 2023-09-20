@@ -36,7 +36,10 @@ useEffect(() => {
 
               <div className="grid grid-flow-col sm:auto-cols-max justify-start sm:justify-end gap-2">
                 <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white">
-                  <span className="hidden xs:block ml-2">Group Conversation</span>
+                  <span className="hidden xs:block ml-2">
+                    <a href="/user/chat">Group Conversation
+                      </a>
+                    </span>
                 </button>  
                 <Datepicker align="right" />
               </div>
