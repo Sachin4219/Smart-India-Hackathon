@@ -42,7 +42,6 @@ const UserCalendar = () => {
       alert("Error logging in to Google provider with Supabase");
       console.log(error);
     }
-    window.location.reload();
   }
 
   async function signOut() {
