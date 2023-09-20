@@ -49,7 +49,7 @@ function AuthForm() {
       'password': password
     })
     if (isSignUp) {
-      const response = await axios.post('http://localhost:6001' + '/auth/register', {
+      const response = await axios.post(base_url + '/auth/register', {
         profile: profile,
         firstName: firstname,
         lastName: lastname,
@@ -70,7 +70,7 @@ function AuthForm() {
       }
     }
     else {
-      const response = await axios.post('http://localhost:6001'+ '/auth/login', {
+      const response = await axios.post(base_url+ '/auth/login', {
         profile: profile,
         caseId: caseId,
         courtId: courtId,
