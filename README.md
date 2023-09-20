@@ -1,3 +1,13 @@
+# Team Name : Justice Jugglers<br>
+Drive link for video of the prototype<br>
+https://drive.google.com/drive/folders/1NqCt-iADIFcX_FQ9DRJXQku3mhPA4CXK?usp=sharing<br>
+
+Deployed link of the prototype<br>
+https://sih-internal-r2-six.vercel.app/ <br>
+
+Deployed link for backend<br>
+https://sih-internal-r2.onrender.com <br>
+
 Introducing LEGALHUB - Simplifying Case Flow Management:<br>
 
 LEGALHUB is your go-to online platform for comprehensive Differentiated Case Flow Management services. Our innovative solution is set to transform the legal landscape, placing innovation at the core of the justice system. By seamlessly integrating cutting-edge technology, LEGALHUB is dedicated to streamlining case management, improving transparency, and optimizing operational efficiency within the legal sphere.<br>
