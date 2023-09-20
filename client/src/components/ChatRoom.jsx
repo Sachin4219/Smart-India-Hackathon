@@ -3,6 +3,7 @@ import "./ChatComponent.css"
 import { useParams } from 'react-router-dom';
 import {createClient, createChannel} from "agora-rtm-react"
 import io from "socket.io-client";
+
 function ChatRoom() {
     //create message ref
 
@@ -11,8 +12,8 @@ function ChatRoom() {
     const [roomName, setRoomName] = useState("");
     const [userName, setUserName] = useState("");
 
-    // const socket = io("https://nodesocket4219.onrender.com");
-    const socket = io("http://localhost:4000")
+    const socket = io("https://nodesocket4219.onrender.com");
+    // const socket = io("http://localhost:4000")
 
     const activeChat = JSON.parse(localStorage.getItem("activeChat"));
     console.log(activeChat);
