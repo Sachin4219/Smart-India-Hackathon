@@ -14,7 +14,6 @@ import {
   CaseDesc,
 } from "./pages/index.js";
 import AuthForm from "./SignIn/authForm";
-import CaseDescription from "./pages/CaseDescription";
 
 function App() {
   return (
