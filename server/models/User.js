@@ -10,13 +10,10 @@ const userSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    location: String,
-    description: String,
     phoneNumber: String,
-    picturePath: String,
-    userPicturePath: String,
+    caseId : String,
     password: String,
-    case: { type: "ObjectId", ref: "Case" },
+    // case: { type: "ObjectId", ref: "Case" },
   },
   { timestamps: true }
 );

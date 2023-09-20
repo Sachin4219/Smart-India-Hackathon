@@ -35,16 +35,16 @@ app.use("/assets", express.static(path.join(__dirname, "public/assets")));
 
 // FILE STORAGE
 
-const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, "public/assets");
-  },
-  filename: function (req, file, cb) {
-    cb(null, file.originalname);
-  },
-});
+// const storage = multer.diskStorage({
+//   destination: function (req, file, cb) {
+//     cb(null, "public/assets");
+//   },
+//   filename: function (req, file, cb) {
+//     cb(null, file.originalname);
+//   },
+// });
 
-const upload = multer({ storage });
+// const upload = multer({ storage });
 
 // ROUTES WITH FILES
 
@@ -58,18 +58,17 @@ app.use("/auth", authRoutes);
 
 // MONGOOSE SETUP
 
+
 const PORT = process.env.PORT || 6001;
-mongoose
-  .connect(process.env.MONGO_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => {
-    app.listen(PORT, () => console.log(`Server Port : ${PORT}`));
-    // ADDING DATA
-    // User.insertMany(users);
-    // Post.insertMany(posts);
-  })
-  .catch((error) => {
-    console.log(`${error} did not connnect`);
-  });
+mongoose.connect(process.env.MONGO_URL, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+}).then(() => {
+  app.listen(PORT, () => console.log(`Server Port : ${PORT}`));
+  // ADDING DATA
+  // User.insertMany(users);
+  // Post.insertMany(posts);
+
+}).catch((error) => {
+  console.log(`${error} did not connnect`);
+})

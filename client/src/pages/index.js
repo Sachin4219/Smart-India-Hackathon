@@ -6,3 +6,4 @@ export { default as UpcomingCases } from "./UpcomingCases.jsx";
 export { default as PresentCases } from "./PresentCases.jsx";
 export { default as PastCases } from "./PastCases.jsx";
 export { default as UserCalendar } from "./UserCalendar.jsx";
+export { default as CaseDesc } from "./CaseDesc.jsx";
