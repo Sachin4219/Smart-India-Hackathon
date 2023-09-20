@@ -304,7 +304,6 @@ function Sidebar({
                   return (
                     <React.Fragment>
                       <a
-                        href="#0"
                         className={`block text-slate-200 truncate transition duration-150 ${
                           pathname.includes('community') ? 'hover:text-slate-200' : 'hover:text-white'
                         }`}
@@ -314,6 +313,7 @@ function Sidebar({
                           setSidebarExpanded(true);
                         }}
                       >
+                      <NavLink end to='/litigant/chat'>
                         <div className="flex items-center justify-between">
                           <div className="flex items-center">
                             <svg className="shrink-0 h-6 w-6" viewBox="0 0 24 24">
@@ -330,7 +330,9 @@ function Sidebar({
                               Legal Chat
                             </span>
                           </div>
+                      
                         </div>
+                        </NavLink>
                       </a>
                     </React.Fragment>
                   );
@@ -342,7 +344,7 @@ function Sidebar({
               <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${pathname.includes('calendar') && 'bg-slate-900'}`}>
                 <NavLink
                   end
-                  to="/calendar"
+                  to="/judge/calendar"
                   className={`block text-slate-200 truncate transition duration-150 ${
                     pathname.includes('calendar') ? 'hover:text-slate-200' : 'hover:text-white'
                   }`}
