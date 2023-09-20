@@ -13,6 +13,7 @@ import {
   UserCalendar,
 } from "./pages/index.js";
 import AuthForm from "./SignIn/authForm";
+import CaseDescription from "./pages/CaseDescription";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" element={<AuthForm />} />
           <Route path="/judge" element={<HomePageJudge />} />
           <Route path="/litigant" element={<HomePageLitigant />} />
+          <Route path="/litigant/chat" element={<UserChat />} />
           <Route path="/user" element={<HomePageUser />} />
           <Route path="/user/chat" element={<UserChat />} />
           <Route
@@ -48,6 +50,7 @@ function App() {
           <Route path="/user/calendar" element={<UserCalendar />} />
           <Route path="/judge/calendar" element={<UserCalendar />} />
           <Route path="/litigant/calendar" element={<UserCalendar />} />
+          <Route path="/judge/casedesc" element={<CaseDescription />} />
         </Routes>
       </BrowserRouter>
     </div>
